@@ -1,0 +1,207 @@
+.notification-banner {
+  position: fixed;
+  top: 3.5rem;
+  left: 50vw;
+  width: 50%;
+  z-index: 999;
+  border-bottom: 0.1px solid #202127;
+  overflow-wrap: break-word;
+}
+
+.bg-rm {
+  mix-blend-mode: multiply;
+}
+
+.modal {
+  z-index: 999;
+}
+
+.navbar {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-res {
+  z-index: 999;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+  width: 30vw;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.searchCard {
+  background-color: #f8f9fa;
+}
+
+.skeleton {
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+.skeleton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: skeleton-loading 1.5s infinite;
+}
+
+.container .skeleton-card {
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.25rem;
+}
+.container .skeleton-card .skeleton-img {
+  width: 250px;
+  height: 250px;
+  background-color: #ddd;
+}
+.container .skeleton-card .skeleton-content {
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+.container .skeleton-card .skeleton-content .skeleton-badge {
+  width: 50px;
+  height: 20px;
+  background-color: #ddd;
+  margin-bottom: 0.5rem;
+}
+.container .skeleton-card .skeleton-content .skeleton-title {
+  width: 70%;
+  height: 30px;
+  background-color: #ddd;
+  margin-bottom: 1rem;
+}
+.container .skeleton-card .skeleton-content .skeleton-description {
+  width: 100%;
+  height: 50px;
+  background-color: #ddd;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.skeleton-card {
+  position: relative;
+  overflow: hidden;
+}
+.skeleton-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.card.skeleton .blog-title-link,
+.card.skeleton p,
+.card.skeleton span,
+.card.skeleton small {
+  background-color: #f5f5f5;
+}
+
+.blog-title-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.card-hover:hover .blog-title-link {
+  text-decoration: underline;
+}
+
+.dmode {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.fa-sun, .fa-moon {
+  cursor: pointer;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.truncate-more-line {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* Set a specific width or adjust as needed */
+}
+
+.footer {
+  display: block;
+  margin: 0;
+}
+
+/* Extra small devices (less than 576px) */
+@media (max-width: 575.98px) {
+  /* CSS rules for extra small devices */
+}
+/* Small devices (576px and up) */
+@media (min-width: 576px) {
+  /* CSS rules for small devices */
+}
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+  /* CSS rules for medium devices */
+}
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+  /* CSS rules for large devices */
+}
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  /* CSS rules for extra large devices */
+}
+/* Extra extra large devices (1400px and up) */
+@media (min-width: 1400px) {
+  /* CSS rules for extra extra large devices */
+}/*# sourceMappingURL=App.css.map */
